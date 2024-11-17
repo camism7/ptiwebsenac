@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Geist Mono";
+  color: #38c9dd;
+}
+
+.containerTitle {
+  border: 2px dashed #3ea5cb;
+  border-radius: 25px;
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerTitle h2 {
+  font-size: 37px;
+  font-weight: 900;
+  margin: 0px 10px;
+}
+
+.containerTitle > img {
+  max-width: 115px;
+  width: 90%;
+  padding: 5px;
+}
+
+.containerGeral {
+  margin: 30px 20px;
+  padding: 5px;
+}
+
+.containerSobre h2 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.containerSobre p {
+  border: 2px dashed #3ea5cb;
+  padding: 7px;
+  text-align: center;
+  font-weight: 300;
+  color: #32322c;
+}
+
+.idiomas h2 {
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: 700;
+}
+
+.containerIdiomas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 20px;
+  max-width: 290px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 50%;
+  height: auto;
+}
+
+.card button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #3ea5cb;
+  color: rgb(255, 255, 255);
+}
+
+.containerVantagens h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.vantagens {
+  border: 2px dashed #3ea5cb;
+}
+
+.vantagens p {
+  padding: 7px;
+  text-align: center;
+  font-weight: 300;
+  color: #32322c;
+}
+
+.box2vantagens {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.cardVantagens {
+  border: 2px dashed #3ea5cb;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 20px;
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cardVantagens h2 {
+  font-size: 16px;
+}
+
+.cardVantagens img {
+  width: 50%;
+  height: auto;
+}
+
+.containerContato h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.containerContato h3 {
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form input,
+textarea,
+select,
+button {
+  width: 100%;
+  max-width: 400px;
+  font-size: 16px;
+  border: 1px solid #38c9dd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.form label {
+  font-weight: bold;
+  color: #3ea5cb;
+}
+
+.form button {
+  background-color: #3ea5cb;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form button:hover {
+  background-color: #2b8aa7;
+}
+
+textarea {
+  resize: none; /* Impede o redimensionamento manual */
+}
+
+/* Responsividade para telas muito pequenas (máximo de 400px) */
+@media (max-width: 400px) {
+  .containerTitle {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .containerTitle h2 {
+    font-size: 18px;
+  }
+
+  .containerTitle > img {
+    max-width: 60px;
+    margin-top: 5px;
+  }
+
+  .containerSobre p,
+  .vantagens p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .containerIdiomas {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .card h2 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .box2vantagens {
+    flex-direction: column;
+  }
+
+  .cardVantagens {
+    max-width: 100px;
+    padding: 10px;
+  }
+
+  .form input,
+  textarea,
+  select,
+  button {
+    font-size: 14px;
+  }
+
+  .form button {
+    padding: 8px 12px;
+  }
+
+  .infos p {
+    font-size: 12px;
+  }
+}
+
+/* Responsividade para telas Pequenas (menor que 640px) */
+@media (max-width: 640px) {
+  .containerTitle {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .containerTitle h2 {
+    font-size: 24px;
+  }
+
+  .containerTitle > img {
+    max-width: 80px;
+    margin-top: 10px;
+  }
+
+  .containerSobre p,
+  .vantagens p {
+    font-size: 14px;
+  }
+
+  .containerIdiomas {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 10px auto;
+  }
+
+  .box2vantagens {
+    flex-direction: column;
+  }
+}
+
+/* Responsividade para telas Médias (641px a 1007px) */
+@media (min-width: 641px) and (max-width: 1007px) {
+  .containerTitle h2 {
+    font-size: 30px;
+  }
+
+  .containerIdiomas {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    max-width: 45%;
+    margin: 15px auto;
+  }
+
+  .box2vantagens {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .cardVantagens {
+    max-width: 150px;
+  }
+}
+
+/* Responsividade para telas Grandes (1008px e maior) */
+@media (min-width: 1008px) {
+  .containerIdiomas {
+    justify-content: center;
+  }
+
+  .box2vantagens {
+    justify-content: space-between;
+  }
+}
